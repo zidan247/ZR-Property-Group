@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZR Property Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0044cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0044cc;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1 1 45%;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #0044cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #003399;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ZR Property Group</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Connecting Investors and Developers</h3>
+                    <p>We specialize in connecting institutional investors—particularly those focused on Build-to-Rent (BTR)—with developers nearing completion on residential schemes ideal for the BTR model.</p>
+                </div>
+                <div class="service">
+                    <h3>Extensive Network</h3>
+                    <p>With an extensive network of investment funds and developers, we are mandated to sell various sites, ensuring optimal opportunities for all parties involved.</p>
+                </div>
+            </div>
+        </section>
+        <section id="financing">
+            <h2>Interest / Financing</h2>
+            <p>We do not facilitate mortgages, development finance, or any other interest-based loans. Financing will be handled separately from ZR Property Group. If liquidity is an obstacle, we have a vast investor list open to joint venture agreements, where multiple parties can collaborate on property purchases. For further information, please contact us.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="organization" placeholder="Organization">
+                <input type="text" name="address" placeholder="Address">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 ZR Property Group. All rights reserved.</p>
+        <p>Phone: 07926235153 | Email: zidan@zrpropertygroup.com</p>
+    </footer>
+</body>
+</html>
